@@ -11,4 +11,4 @@ netParams.importCellParams(label='PV', fileName='geom.py', cellName='PVC', cellA
 
 netParams.popParams['PYR'] = {'cellType' : 'PYR', 'numCells' : 1}
 netParams.popParams['OLM'] = {'cellType' : 'OLM', 'numCells' : 1}
-netParams.popParams['PV'] + {'cellType' : 'PV', 'numCells' : 1}
+netParams.popParams['PV'] = {'cellType' : 'PV', 'numCells' : 1}
