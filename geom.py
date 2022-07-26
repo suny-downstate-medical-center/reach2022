@@ -99,9 +99,9 @@ class Cell(object):
         self.__dict__[name] = h.Section()
         self.all_sec.append(self.__dict__[name])
         # Record voltage
-        if rec:
-            self.__dict__[name+"_volt"] = h.Vector(int(h.tstop/h.dt)+1)
-            self.__dict__[name+"_volt"].record(self.__dict__[name](0.5)._ref_v)
+        # if rec:
+        #     self.__dict__[name+"_volt"] = h.Vector(int(h.tstop/h.dt)+1)
+        #     self.__dict__[name+"_volt"].record(self.__dict__[name](0.5)._ref_v)
 
     def plot_volt(self, name,  myax, *args, **kwargs):
           # figure(fig)
