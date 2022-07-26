@@ -2,7 +2,7 @@
 
 from pyinit import *
 h.celsius = 37
-
+h.load_file('stdrun.hoc')
 from conf import *
 
 
