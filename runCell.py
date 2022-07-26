@@ -1,6 +1,6 @@
 from geom import *
-from neuron import h 
-h.load_file('stdrun.hoc')
+# from neuron import h 
+# h.load_file('stdrun.hoc')
 cell = PVC(0,0,0,0)
 h.psection()
 # cell = PyrAdr(0,0,0,0)

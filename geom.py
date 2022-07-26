@@ -103,12 +103,12 @@ class Cell(object):
         #     self.__dict__[name+"_volt"] = h.Vector(int(h.tstop/h.dt)+1)
         #     self.__dict__[name+"_volt"].record(self.__dict__[name](0.5)._ref_v)
 
-    def plot_volt(self, name,  myax, *args, **kwargs):
-          # figure(fig)
-          volt = self.__dict__[name+"_volt"].to_python()
-          myax.plot(arange(len(volt))*h.dt, volt, *args, **kwargs)
-          myax.set_xlabel('time (ms)')
-          myax.set_ylabel('voltage (mV)')
+    # def plot_volt(self, name,  myax, *args, **kwargs):
+    #       # figure(fig)
+    #       volt = self.__dict__[name+"_volt"].to_python()
+    #       myax.plot(arange(len(volt))*h.dt, volt, *args, **kwargs)
+    #       myax.set_xlabel('time (ms)')
+    #       myax.set_ylabel('voltage (mV)')
 
     def clear_volt(self):
         self.soma_volt.resize(0)
