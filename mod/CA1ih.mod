@@ -59,12 +59,12 @@ INITIAL {
 PROCEDURE rates(v (mV)) {
   UNITSOFF
   : HCN1
-  hinf = 1/(1+exp(0.151*(v-v50)))
-  htau = exp((0.033*(v+75)))/(0.011*(1+exp(0.083*(v+75))))
+  :hinf = 1/(1+exp(0.151*(v-v50)))
+  :htau = exp((0.033*(v+75)))/(0.011*(1+exp(0.083*(v+75))))
 
   : HCN2
-  :hinf = 1/(1+exp((v-v50)/10.5))
-  :htau = htaufactor/(exp(-14.59-0.086*v)+exp(-1.87+0.0701*v))
+  hinf = 1/(1+exp((v-v50)/10.5))
+  htau = htaufactor/(exp(-14.59-0.086*v)+exp(-1.87+0.0701*v))
   UNITSON
 }
 
